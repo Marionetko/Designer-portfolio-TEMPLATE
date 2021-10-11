@@ -10,6 +10,7 @@
 			rel="stylesheet">
 		<link rel="stylesheet" href="css/style.css">
 		<title>Portfolio</title>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 	</head>
 
 	<body>
@@ -38,7 +39,7 @@
 					</div>
 				</div>
 			</div>
-		</header>
+		</header> <!-- /.header -->
 
 		<!-- Intro -->
 		<section class="intro">
@@ -79,26 +80,25 @@
 				</div> <!-- /.intro__inner -->
 
 			</div><!-- /.container -->
-		</section>
-
+		</section> <!-- /.intro -->
 
 		<!-- Works -->
 		<div class="works">
 			<div class="container">
 
 				<div class="works__nav">
-					<a class="works__nav-link" href="#">All</a>
-					<a class="works__nav-link" href="#">App</a>
-					<a class="works__nav-link" href="#">Website</a>
-					<a class="works__nav-link" href="#">Interaction</a>
+					<a class="works__nav-link" href="#" data-filter="all">All</a>
+					<a class="works__nav-link" href="#" data-filter="app">App</a>
+					<a class="works__nav-link" href="#" data-filter="website">Website</a>
+					<a class="works__nav-link" href="#" data-filter="interaction">Interaction</a>
 				</div>
 
-				<div class="portfolio">
-					<div class="portfolio__col">
+				<div class="portfolio" id="portfolio">
+					<div class="portfolio__col" data-cat="app">
 						<div class="work">
 							<img class="work__image" src="https://via.placeholder.com/370x300" alt="">
 							<div class="work__content">
-								<div class="work__cat">category</div>
+								<div class="work__cat">category: app</div>
 								<div class="work__title">
 									Project title
 									<time class="work__date" datetime="2021-07-31 13:00">2021</time>
@@ -107,11 +107,11 @@
 						</div>
 					</div>
 
-					<div class="portfolio__col">
+					<div class="portfolio__col" data-cat="website">
 						<div class="work">
 							<img class="work__image" src="https://via.placeholder.com/370x300" alt="">
 							<div class="work__content">
-								<div class="work__cat">category</div>
+								<div class="work__cat">category: website</div>
 								<div class="work__title">
 									Project title
 									<time class="work__date" datetime="2021-07-31 13:00">2021</time>
@@ -120,11 +120,11 @@
 						</div>
 					</div>
 
-					<div class="portfolio__col">
+					<div class="portfolio__col" data-cat="interaction">
 						<div class="work">
 							<img class="work__image" src="https://via.placeholder.com/370x300" alt="">
 							<div class="work__content">
-								<div class="work__cat">category</div>
+								<div class="work__cat">category: interaction</div>
 								<div class="work__title">
 									Project title
 									<time class="work__date" datetime="2021-07-31 13:00">2021</time>
@@ -133,11 +133,11 @@
 						</div>
 					</div>
 
-					<div class="portfolio__col">
+					<div class="portfolio__col" data-cat="website">
 						<div class="work">
 							<img class="work__image" src="https://via.placeholder.com/370x300" alt="">
 							<div class="work__content">
-								<div class="work__cat">category</div>
+								<div class="work__cat">category: website</div>
 								<div class="work__title">
 									Project title
 									<time class="work__date" datetime="2021-07-31 13:00">2021</time>
@@ -146,11 +146,11 @@
 						</div>
 					</div>
 
-					<div class="portfolio__col">
+					<div class="portfolio__col" data-cat="interaction">
 						<div class="work">
 							<img class="work__image" src="https://via.placeholder.com/370x300" alt="">
 							<div class="work__content">
-								<div class="work__cat">category</div>
+								<div class="work__cat">category: interaction</div>
 								<div class="work__title">
 									Project title
 									<time class="work__date" datetime="2021-07-31 13:00">2021</time>
@@ -159,11 +159,11 @@
 						</div>
 					</div>
 
-					<div class="portfolio__col">
+					<div class="portfolio__col" data-cat="interaction">
 						<div class="work">
 							<img class="work__image" src="https://via.placeholder.com/370x300" alt="">
 							<div class="work__content">
-								<div class="work__cat">category</div>
+								<div class="work__cat">category: interaction</div>
 								<div class="work__title">
 									Project title
 									<time class="work__date" datetime="2021-07-31 13:00">2021</time>
@@ -172,11 +172,11 @@
 						</div>
 					</div>
 
-					<div class="portfolio__col">
+					<div class="portfolio__col" data-cat="app">
 						<div class="work">
 							<img class="work__image" src="https://via.placeholder.com/370x300" alt="">
 							<div class="work__content">
-								<div class="work__cat">category</div>
+								<div class="work__cat">category: app</div>
 								<div class="work__title">
 									Project title
 									<time class="work__date" datetime="2021-07-31 13:00">2021</time>
@@ -185,11 +185,11 @@
 						</div>
 					</div>
 
-					<div class="portfolio__col">
+					<div class="portfolio__col" data-cat="website">
 						<div class="work">
 							<img class="work__image" src="https://via.placeholder.com/370x300" alt="">
 							<div class="work__content">
-								<div class="work__cat">category</div>
+								<div class="work__cat">category: website</div>
 								<div class="work__title">
 									Project title
 									<time class="work__date" datetime="2021-07-31 13:00">2021</time>
@@ -198,11 +198,11 @@
 						</div>
 					</div>
 
-					<div class="portfolio__col">
+					<div class="portfolio__col" data-cat="app">
 						<div class="work">
 							<img class="work__image" src="https://via.placeholder.com/370x300" alt="">
 							<div class="work__content">
-								<div class="work__cat">category</div>
+								<div class="work__cat">category: app</div>
 								<div class="work__title">
 									Project title
 									<time class="work__date" datetime="2021-07-31 13:00">2021</time>
@@ -247,7 +247,7 @@
 
 				</div><!-- /.about__inner -->
 			</div> <!-- /.container -->
-		</section>
+		</section> <!-- /.about -->
 
 		<!-- Reviews -->
 		<div class="reviews">
@@ -421,7 +421,6 @@
 
 			</div> <!-- /.container -->
 		</footer> <!-- /.footer -->
-
 
 		<!-- Modals -->
 		<div class="modal" style="display: none;">
@@ -708,6 +707,10 @@
 
 			</div> <!-- /.modal__dialog -->
 		</div> <!-- /.modal -->
+
+		<!-- JS -->
+		<script src="js/app.js"></script>
+
 	</body>
 
 </html>
