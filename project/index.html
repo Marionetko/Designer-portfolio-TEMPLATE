@@ -35,7 +35,7 @@
 						<a class="nav__link" href="#">about me</a>
 						<a class="nav__link" href="#">blog</a>
 						<a class="nav__link" href="#">contact</a>
-						<a class="nav__link nav__link--btn" href="#">hire me</a>
+						<a class="nav__link nav__link--btn" href="#" data-modal="#modal_hire_me">hire me</a>
 					</div>
 				</div>
 			</div>
@@ -72,8 +72,8 @@
 							</a>
 						</div>
 
-						<a class="btn" href="#" id="">HIRE ME</a>
-						<button type="button" class="btn">SEE MY RESUME</button>
+						<a class="btn" href="#" data-modal="#modal_hire_me">HIRE ME</a>
+						<button type="button" class="btn" data-modal="#modal_resume">SEE MY RESUME</button>
 					</div>
 
 					<img class="intro__photo" src="img/photo.png" alt="">
@@ -95,7 +95,7 @@
 
 				<div class="portfolio" id="portfolio">
 					<div class="portfolio__col" data-cat="app">
-						<div class="work">
+						<div class="work" data-modal="#modal_project_1">
 							<img class="work__image" src="https://via.placeholder.com/370x300" alt="">
 							<div class="work__content">
 								<div class="work__cat">category: app</div>
@@ -108,7 +108,7 @@
 					</div>
 
 					<div class="portfolio__col" data-cat="website">
-						<div class="work">
+						<div class="work" data-modal="#modal_project_1">
 							<img class="work__image" src="https://via.placeholder.com/370x300" alt="">
 							<div class="work__content">
 								<div class="work__cat">category: website</div>
@@ -121,7 +121,7 @@
 					</div>
 
 					<div class="portfolio__col" data-cat="interaction">
-						<div class="work">
+						<div class="work" data-modal="#modal_project_1">
 							<img class="work__image" src="https://via.placeholder.com/370x300" alt="">
 							<div class="work__content">
 								<div class="work__cat">category: interaction</div>
@@ -134,7 +134,7 @@
 					</div>
 
 					<div class="portfolio__col" data-cat="website">
-						<div class="work">
+						<div class="work" data-modal="#modal_project_1">
 							<img class="work__image" src="https://via.placeholder.com/370x300" alt="">
 							<div class="work__content">
 								<div class="work__cat">category: website</div>
@@ -147,7 +147,7 @@
 					</div>
 
 					<div class="portfolio__col" data-cat="interaction">
-						<div class="work">
+						<div class="work" data-modal="#modal_project_1">
 							<img class="work__image" src="https://via.placeholder.com/370x300" alt="">
 							<div class="work__content">
 								<div class="work__cat">category: interaction</div>
@@ -160,7 +160,7 @@
 					</div>
 
 					<div class="portfolio__col" data-cat="interaction">
-						<div class="work">
+						<div class="work" data-modal="#modal_project_1">
 							<img class="work__image" src="https://via.placeholder.com/370x300" alt="">
 							<div class="work__content">
 								<div class="work__cat">category: interaction</div>
@@ -173,7 +173,7 @@
 					</div>
 
 					<div class="portfolio__col" data-cat="app">
-						<div class="work">
+						<div class="work" data-modal="#modal_project_1">
 							<img class="work__image" src="https://via.placeholder.com/370x300" alt="">
 							<div class="work__content">
 								<div class="work__cat">category: app</div>
@@ -186,7 +186,7 @@
 					</div>
 
 					<div class="portfolio__col" data-cat="website">
-						<div class="work">
+						<div class="work" data-modal="#modal_project_1">
 							<img class="work__image" src="https://via.placeholder.com/370x300" alt="">
 							<div class="work__content">
 								<div class="work__cat">category: website</div>
@@ -199,7 +199,7 @@
 					</div>
 
 					<div class="portfolio__col" data-cat="app">
-						<div class="work">
+						<div class="work" data-modal="#modal_project_1">
 							<img class="work__image" src="https://via.placeholder.com/370x300" alt="">
 							<div class="work__content">
 								<div class="work__cat">category: app</div>
@@ -241,8 +241,8 @@
 								repellat quibusdam, repudiandae tempore harum in illum natus deserunt unde temporibus
 								voluptas ipsam voluptatem saepe, reiciendis quaerat consequuntur!</p>
 						</div>
-						<a class="btn" href="#" id="">HIRE ME</a>
-						<button type="button" class="btn">SEE MY RESUME</button>
+						<a class="btn" href="#" data-modal="#modal_hire_me">HIRE ME</a>
+						<button type="button" class="btn" data-modal="#modal_resume">SEE MY RESUME</button>
 					</div><!-- /.about__content -->
 
 				</div><!-- /.about__inner -->
@@ -415,7 +415,8 @@
 						<a href="#" class="footer__nav-link">About Me</a>
 						<a href="#" class="footer__nav-link">Blog</a>
 						<a href="#" class="footer__nav-link">Contact</a>
-						<a href="#" class="footer__nav-link footer__nav-link--btn">HIRE ME</a>
+						<a href="#" class="footer__nav-link footer__nav-link--btn" data-modal="#modal_hire_me">HIRE
+							ME</a>
 					</nav> <!-- /.footer__nav -->
 				</div> <!-- /.footer__inner -->
 
@@ -423,10 +424,10 @@
 		</footer> <!-- /.footer -->
 
 		<!-- Modals -->
-		<div class="modal" style="display: none;">
+		<div class="modal" id="modal_project_1">
 			<div class="modal__dialog">
 
-				<button class="modal__close" type="button">
+				<button class="modal__close" type="button" data-close>
 					<img class="modal__close-img" src="img/modal-close.svg" alt="Close">
 				</button>
 
@@ -473,10 +474,10 @@
 			</div> <!-- /.modal__dialog -->
 		</div> <!-- /.modal -->
 
-		<div class="modal" style="display: none;">
+		<div class="modal" id="modal_resume">
 			<div class="modal__dialog">
 
-				<button class="modal__close" type="button">
+				<button class="modal__close" type="button" data-close>
 					<img class="modal__close-img" src="img/modal-close.svg" alt="Close">
 				</button>
 
@@ -655,16 +656,16 @@
 					</div> <!-- /.timeline-->
 
 					<div class="text-center">
-						<a class="btn" href="#">HIRE ME</a>
+						<a class="btn" href="#" data-modal="#modal_hire_me">HIRE ME</a>
 					</div>
 				</div> <!-- /.modal__content-->
 			</div> <!-- /.modal__dialog -->
 		</div> <!-- /.modal -->
 
-		<div class="modal" style="display: none;">
+		<div class="modal" id="modal_hire_me">
 			<div class="modal__dialog modal__dialog--sm">
 
-				<button class="modal__close" type="button">
+				<button class="modal__close" type="button" data-close>
 					<img class="modal__close-img" src="img/modal-close.svg" alt="Close">
 				</button>
 
