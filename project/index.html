@@ -108,7 +108,7 @@
 					</div>
 
 					<div class="portfolio__col" data-cat="website">
-						<div class="work" data-modal="#modal_project_1">
+						<div class="work" data-modal="#modal_project_2">
 							<img class="work__image" src="https://via.placeholder.com/370x300" alt="">
 							<div class="work__content">
 								<div class="work__cat">category: website</div>
@@ -433,7 +433,14 @@
 
 				<div class="modal-work">
 					<div class="modal-work__preview">
-						<img class="modal-work__img" src="https://via.placeholder.com/790x780" alt="">
+						<div data-slider="slick">
+							<div>
+								<img class="modal-work__img" src="https://via.placeholder.com/790x780" alt="">
+							</div>
+							<div>
+								<img class="modal-work__img" src="https://via.placeholder.com/790x780/333" alt="">
+							</div>
+						</div>
 					</div>
 					<div class="modal-work__content">
 						<div class="modal-work__header">
@@ -458,11 +465,68 @@
 						</div>
 
 						<div class="modal-work__footer">
-							<button class="modal-work-btn" type="button">
+							<button class="modal-work-btn slickPrev" type="button">
 								<img src="img/back.svg" height="11" alt="">
 								PREVIOUS
 							</button>
-							<button class="modal-work-btn" type="button">
+							<button class="modal-work-btn slickNext" type="button">
+								NEXT
+								<img src="img/next.svg" height="11" alt="">
+							</button>
+						</div>
+					</div>
+
+				</div> <!-- /.modal-work -->
+
+			</div> <!-- /.modal__dialog -->
+		</div> <!-- /.modal -->
+
+		<div class="modal" id="modal_project_2">
+			<div class="modal__dialog">
+
+				<button class="modal__close" type="button" data-close>
+					<img class="modal__close-img" src="img/modal-close.svg" alt="Close">
+				</button>
+
+				<div class="modal-work">
+					<div class="modal-work__preview">
+						<div data-slider="slick">
+							<div>
+								<img class="modal-work__img" src="https://via.placeholder.com/790x780" alt="">
+							</div>
+							<div>
+								<img class="modal-work__img" src="https://via.placeholder.com/790x780/333" alt="">
+							</div>
+						</div>
+					</div>
+					<div class="modal-work__content">
+						<div class="modal-work__header">
+							<h3 class="modal-work__title">PROJECT TITLE 2</h3>
+							<div class="modal-work__info">
+								CATEGORY <span class="modal-work__info-divider">|</span> 2018
+							</div>
+						</div>
+
+						<div class="modal-work__client">
+							<div class="modal-work__client-title">Client:</div>
+							<div class="modal-work__client-company">Creative Agency</div>
+						</div>
+
+						<div class="modal-work__text">
+							<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit culpa, quisquam
+								consequuntur fugiat adipisci recusandae sunt, mollitia at natus doloremque veniam
+								inventore quaerat aperiam repudiandae suscipit laborum laboriosam provident sed.</p>
+							<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Odit culpa, quisquam
+								consequuntur fugiat adipisci recusandae sunt, mollitia at natus doloremque veniam
+								inventore quaerat aperiam repudiandae suscipit laborum laboriosam provident sed.</p>
+						</div>
+
+						<div class="modal-work__footer">
+							<button class="modal-work-btn slickPrev" type="button">
+								<img src="img/back.svg" height="11" alt="">
+								PREVIOUS
+							</button>
+							<button class="modal-work-btn slickNext" type="button">
 								NEXT
 								<img src="img/next.svg" height="11" alt="">
 							</button>
@@ -710,6 +774,7 @@
 		</div> <!-- /.modal -->
 
 		<!-- JS -->
+		<script src="js/slick.min.js"></script>
 		<script src="js/app.js"></script>
 
 	</body>
