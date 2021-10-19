@@ -3,7 +3,7 @@
 .btn {
 	display: inline-block;
 	vertical-align: top;
-	padding: 1em 1.7em;
+	padding: 1.05em 1.7em;
 	min-width: 170px;
 
 	border: 1px solid @gray;
@@ -50,5 +50,21 @@
 		min-width: 145px;
 
 		font-size: 0.8rem;
+	}
+
+	@media @tablet {
+		font-size: 1rem;
+		padding: 1em 1.5em;
+		min-width: 140px;
+	}
+
+	@media @mobile-sm {
+		display: block;
+		width: 100%;
+
+		+ .btn {
+			margin-left: 0;
+			margin-top: 1rem;
+		}
 	}
 }
