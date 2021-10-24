@@ -3,6 +3,10 @@
 .progress-bar {
 	padding-right: 2rem;
 	margin-bottom: 2.6rem;
+
+	@media @mobile-sm {
+		padding: 0;
+	}
 }
 
 .progress-bar__item {
@@ -19,6 +23,10 @@
 
 .progress-bar__right {
 	padding-left: 1.2rem;
+
+	@media @mobile-sm {
+		padding-left: 0;
+	}
 }
 
 .progress-bar__bar {
@@ -26,6 +34,10 @@
 	height: 6px;
 
 	background-color: #EFEFEF;
+
+	@media @mobile-extrasm {
+		width: 120px;
+	}
 }
 
 .progress-bar__progress {

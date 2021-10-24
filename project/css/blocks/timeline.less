@@ -19,6 +19,14 @@
 		top: 0;
 		left: 50%;
 		z-index: 1;
+
+		@media @mobile-sm {
+			display: none;
+		}
+	}
+
+	@media @mobile-sm {
+		flex-direction: column;
 	}
 }
 
@@ -32,7 +40,17 @@
 
 	&--right {
 		padding-left: 3.2rem;
+	}
+
+	@media @mobile-sm {
+		width: 100%;
+
+		&--left,
+		&--right {
+			padding-left: 1rem;
+			padding-right: 1rem;
 		}
+	}
 }
 
 .timeline__title {

@@ -4,11 +4,20 @@
 	display: flex;
 
 	background: url(https://via.placeholder.com/470x700) right center no-repeat;
+
+	@media @tablet {
+		background: none;
+	}
 }
 
 .contact__left {
 	width: 47%;
 	padding: 2rem;
+
+	@media @tablet {
+		width: 100%;
+		padding-top: 3rem;
+	}
 }
 
 .contact__info {
